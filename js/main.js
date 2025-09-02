@@ -113,6 +113,16 @@
         return false;
     });
 
+    window.onscroll = function() {
+        var whatsappIcon = document.getElementById('whatsapp-icon');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          whatsappIcon.style.display = "block";
+        } else {
+          whatsappIcon.style.display = "block";
+        }
+      };
+      
+
 
 })(jQuery);
 
